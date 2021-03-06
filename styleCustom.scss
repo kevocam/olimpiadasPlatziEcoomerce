@@ -1,0 +1,540 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Pacifico&display=swap');
+
+
+$fuente-lora: 'Lora', serif;
+$fuente-montserrat: 'Montserrat', sans-serif;
+$fuente-pacifico:    'Pacifico', cursive;
+$rojo:#EB636B;
+$negro:#161515;
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    font-size:62.5%;
+    font-family: "lora", sans-serif;
+}
+body{
+    font-size: 1.6rem;
+    font-family: $fuente-montserrat;
+}
+.header{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    height: 15vh;
+    background-color: white;
+    &__title{
+        font-size:1.5rem;
+        font-family: $fuente-lora;
+/*         font-weight: 400;
+ */        font-style: italic;
+        justify-self: center;
+        text-align: center;
+    }
+}
+.hero{
+    height: 100vh;
+    &__details{
+        height: 50%;
+        background-image: url("https://regalosenmadera.org/wp-content/uploads/2021/03/fondoHeroPurple.png");
+        &--title{
+            width:100%;
+            color:$rojo;
+            h2{
+
+                font-size: 1.6rem;
+                font-weight: bold; 
+                text-align: center;
+                padding:10px;
+                span{
+                    font-weight: normal; 
+    
+                    font-family: $fuente-pacifico;    
+                    font-size: 2.0rem;
+                }   
+            }
+
+        }
+        &--buttons{
+            
+            display: flex;
+            justify-content: space-between;
+            &--item{
+                &--line{
+                    width: 70px;
+                    border-top:5px solid black;
+                }
+
+            }
+        }
+        &--box{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &--img{
+                width: 100%;
+               display: flex;
+               justify-content: center;
+            }
+            &--btn{
+                width: 125px;
+                height: 42px;
+                font-size: 1.0rem;
+                background-image: url("https://regalosenmadera.org/wp-content/uploads/2021/03/epilseButton.png");
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color:white;
+                font-weight: bold;
+                text-align: center;
+                margin-top:-15px;
+                &--text{
+                    text-align: center;
+                    width: 70px;
+                    
+                }
+                &:hover{
+                    cursor:pointer;
+                }
+            }
+        }
+       
+        
+    }
+    &__gifts{
+        height:50%;
+        background-image: url("https://regalosenmadera.org/wp-content/uploads/2021/03/fondoHeroRed.png");
+        &--title{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            h2{
+                font-size: 2.0rem;
+                font-weight: bold; 
+                text-align: center;
+                padding:10px;
+                color:$negro;
+
+                span{
+                    font-weight: normal; 
+
+                    font-family: $fuente-pacifico;    
+                    font-size: 2.0rem;
+                }
+            }
+        }
+        &--box{
+            display: flex;
+            justify-content: center;
+            z-index: 2;
+
+        }
+        &--buttons{
+            width: 127px;
+            height: 42px;
+            font-size: 1.0rem;
+            background-image: url("https://regalosenmadera.org/wp-content/uploads/2021/03/epilseButton.png");
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color:white;
+            font-weight: bold;
+            text-align: center;
+            z-index:5;
+            margin:0 auto;
+            margin-top:-15px;
+            position: relative;
+            &--title{
+                text-align: center;
+                    width: 70px;
+            }
+            &:hover{
+                cursor: pointer;
+            }
+            &--phone{
+                img{
+                    transform: rotate(180deg);
+                }
+            }
+            
+            
+        }
+    }
+    
+    
+}
+
+.btnDown{
+    width: 100%;
+    position: relative;
+    margin-top:-30px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.details{
+    height: 85vh;
+    &__main{
+        background-image: url("https://regalosenmadera.org/wp-content/uploads/2021/03/fondoHeroPurple.png");
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &--title{
+            width: 100%;
+            font-family: $fuente-pacifico;
+            font-size: 3.0rem;            
+            max-width:273px ;
+            text-align: center;
+        }
+        &--btn{
+            width: 127px;
+            height: 42px;
+            font-size: 1.0rem;
+            background-image: url("https://regalosenmadera.org/wp-content/uploads/2021/03/epilseButton.png");
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color:white;
+            font-weight: bold;
+            text-align: center;
+            z-index:5;
+            margin:0 auto;
+            margin-top:15px;
+            position: relative;
+        }
+        &--footer{
+            font-size: 1.6rem;
+            
+            span{
+                font-weight: normal;
+                font-family: $fuente-pacifico;
+                font-size: 1.8rem;
+            }
+        }
+    }
+    &__info{
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #F5E7E7; 
+        img{
+            max-width: 250px;
+        }  
+     }
+}
+
+.about{
+    text-align: center;
+    &__img{
+        margin:0 auto;
+    }
+    a{
+        text-decoration: none;
+        }
+    &__title{
+        font-family: $fuente-pacifico;
+        font-size: 3.5rem;
+    }
+    &__footer{
+        font-weight: bold;
+        font-family: $fuente-lora;
+        font-style: italic;
+        margin-bottom: 10px;
+        &--pie{
+            max-width: 280px;
+            color:#8C8B8B;
+            font-weight: bold;
+            font-size: 1.8rem;
+            margin: 0 auto;
+            margin-top:15px;
+        }
+        
+    }
+}
+.btnRojo{
+    background-color: $rojo;
+    padding:7px 45px; 
+    color:white;
+    text-transform: none;
+    font-weight: bold;
+    border:none;
+    border-radius: 9px;
+
+}
+.social{
+    text-align: center;
+    max-width: 290px;
+    margin:0 auto;
+    &__title{
+        color: #DC9D00;
+        font-weight: bold;
+        max-width: 290px;
+        text-align: center;
+        font-size: 2.0rem;
+        margin:0 auto;
+        margin-top:10px;
+    }
+    &__icons{
+        display: flex;
+        &--info{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            &--text{
+                font-size: 1.0rem;
+            }
+            &--btn{
+                a{
+                    background-color:#C4C4C4;
+                    padding:5px 30px; 
+                    color:white;
+                    
+                    font-weight: bold;
+                    border:none;
+                    border-radius: 9px;                    
+                    text-decoration: none;
+                }
+            }
+        }
+
+    }
+}
+.partners{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__title{
+        
+        
+    }
+
+}
+.slider-container{
+    display: block;
+    overflow: auto;
+    scroll-behavior: smooth;
+    white-space:nowrap;
+    font-size: 0;
+}
+.img{
+    margin:0;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    aspect-ratio:16/9;
+}
+.slider-bullet-list{
+    text-align: center;
+    margin-block-start: 10px;
+}
+.slider-bullet{
+    display: inline-block;
+    inline-size: 15px;
+    block-size:15px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.calltoaction{
+
+    &__title{
+        text-align: center;
+        margin-bottom: 15px;
+        font-family: $fuente-lora;
+        span{
+            font-weight: bold;
+        }
+        
+
+    }
+    &__btn{
+        width: 100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        a{
+            width: 100%;
+            padding:0;
+            font-size: 1.4rem;
+            text-decoration: none;
+            padding:6px 6px;
+
+        }
+        &--btn{
+            width: 50%;
+        }
+        &--text{
+            font-size:1.3rem ;
+            font-family: $fuente-lora;
+            text-align: center;
+            span{
+                font-weight: bold;
+            }
+        }
+    }
+}
+.howdo{
+    width:100%;
+    background-color: #F5E7E7;
+    &__title{
+        text-align: center;
+        font-size: 3.5rem;
+        font-family: $fuente-pacifico;
+        background-image: url('https://regalosenmadera.org/wp-content/uploads/2021/03/fondoHeroPurple.png');
+        padding:10px 0;
+    }
+    &__content{
+        &--item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            max-width: 200px;
+            margin:0 auto;
+
+            &--img{
+
+            }
+            &--title{
+                color:#371802;
+                font-weight: bold;
+                font-size: 2.0rem;
+
+            }
+            &--description{
+                text-align: center;
+                font-size: 1.2rem;
+                font-weight: lighter;
+
+            }
+        }
+    }
+}
+
+
+.footer{
+    text-align: center;
+    background-color: #F5E7E7;
+    &__branding{
+        width: 100%;
+
+
+        
+        &--title{
+            padding:40px 0px;
+            font-family: $fuente-pacifico;
+            color:#A55900;
+            font-size: 2.9rem;
+            font-weight: lighter;
+            span{
+                color:rgb(10, 10, 10);
+                font-weight: bold;
+                font-size: 3.3rem;
+                font-family: $fuente-lora;
+            }
+        }
+        &--content{
+            max-width: 60%;
+            margin:0 auto;
+            padding:20px 0px;
+            font-weight: lighter;
+            font-size: 1.5rem;
+        }
+    }
+
+    &__line{
+        width:60%;
+        margin:0 auto;
+        border:1px solid #DC9D00;
+    }
+
+    &__subs{
+        max-width:320px;
+        width: 100%;
+        margin:0 auto;
+        &--title{
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin:15px 0;
+            text-align: left;
+            span{
+                color:$rojo;
+            }
+        }
+        &--input{
+            &--input{
+                border:1px solid $rojo;
+                padding:15px;
+                border-radius:10px;
+                &:focus{
+                    
+                    outline: none;
+                }
+            }
+            &--btn{
+                padding:15px 15px;
+                &:focus{
+                    
+                    outline: none;
+                }
+                &:hover{
+                    cursor:pointer;
+                }
+            }
+        }
+    }
+    &__rrss{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &--icons{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            &--item{
+                background:#FAAA94;
+                padding:7px;
+                border-radius:0 9px 9px 0;
+                margin:10px 0px;
+                display: flex;
+                align-items: center;
+                color:white;
+                font-weight: bold;
+                font-family: $fuente-montserrat;
+                img{
+                    margin-left: 10px;
+                }
+                &:hover{
+                    transform: translateX(5px);        
+                    cursor:pointer;
+                }
+            }
+        }
+        &--text{
+            max-width: 144px;
+            font-weight: lighter;
+            font-size: 1.0rem;
+            line-height: 2.5rem;
+            padding:10px;
+        }
+    }
+
+    &__pie{
+        background-color:#DC9D00 ;
+        color:white;
+        padding:5px;
+        font-size: 1.3rem;
+    }
+
+}
